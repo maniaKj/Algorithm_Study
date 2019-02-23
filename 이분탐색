@@ -30,8 +30,8 @@ int solution(int n, vector<int> times) {
 	return min;
 }
 
-//기본형으로는 1, 2 차이로 틀리는 경우가 많음!
-
+//기본형은 코드가 굉장히 예민해서
+//정답이랑 1, 2 차이로 틀리는 경우가 많음!
 //민감한 부분 처리 : 문제 출처 해커 랭크 https://www.hackerrank.com/challenges/minimum-time-required/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search&h_r=next-challenge&h_v=zen
 long minTime(vector<long> machines, long goal) {
     long long min, mid, max;
