@@ -31,7 +31,7 @@ int solution(int n, vector<int> times) {
 }
 
 //기본형은 코드가 굉장히 예민해서
-//정답이랑 1, 2 차이로 틀리는 경우가 많음!
+//정답이랑 +-1 차이로 틀리는 경우가 많음!
 //민감한 부분 처리 : 문제 출처 해커 랭크 https://www.hackerrank.com/challenges/minimum-time-required/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search&h_r=next-challenge&h_v=zen
 long minTime(vector<long> machines, long goal) {
     long long min, mid, max;
@@ -68,7 +68,7 @@ long minTime(vector<long> machines, long goal) {
         }
 
     }
-  //문제의 부분. 말단 처리 칼같이 할 것. 정답이랑 1, 2 차이날 수 있음.
+  //문제의 부분. 말단 처리 칼같이 할 것. 정답이랑 +-1 차이날 수 있음.
     long long c1 = 0, c2 = 0, tt = 0;
     for (auto i : machines) {
         c1 += (mid - 1) / i;
